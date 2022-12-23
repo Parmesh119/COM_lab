@@ -1,1 +1,1 @@
-print(int(input("Enter any number")))
+print(input("Enter any number"))
