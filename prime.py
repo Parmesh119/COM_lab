@@ -8,6 +8,11 @@ def prime(n):
 
 n1=int(input())
 n2=int(input())
+if(n1==1 and n2!=1):
+    n1=n1+1
+elif(n1==1 and n2==1):
+    print("No prime numbers are there")
+
 for i in range(n1,n2+1,+1):
     if(prime(i)):
         print(i)

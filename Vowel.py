@@ -6,6 +6,6 @@ def vowel(ch):
 
 ch=input()
 if(vowel(ch)):
-    print("Vowels")
+    print(ch+" is a Vowels")
 else:
-    print("is not Vowels")
+    print(ch+" is not a Vowels")
