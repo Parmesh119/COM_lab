@@ -1,0 +1,10 @@
+.data
+m: .float, 3
+n: .float, 1
+
+.text
+lwc1 $f1, m
+lwc1 $f2, n
+li $v0, 2
+mul.s $f12, $f2, $f1
+syscall

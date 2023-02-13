@@ -1,0 +1,10 @@
+.data
+m: .word 2
+n: .word 3
+
+.text
+lw $t0, m
+lw $t1, n
+add $a0, $t0, $t1
+li $a0, 1
+syscall

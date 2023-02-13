@@ -1,0 +1,11 @@
+.data
+m: .word, 3
+n: .word, 2
+
+.text
+lw $t1, m
+lw $t2, n
+mul $t3, $t2, $t1
+li $v0, 1
+move $a0, $t3
+syscall
