@@ -1,6 +1,6 @@
 .data
 msg: .asciiz "Enter: " 
-f: .word, 1
+f: .word, 5
 
 .text
 lw $t3, f
