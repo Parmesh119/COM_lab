@@ -1,0 +1,13 @@
+.data
+a: .space, 20
+
+.text
+la $t0, a
+add $t1, $t0, 20
+
+L: beq $t0, $t1, done
+   li $t2, 4
+   sw $t2, ($t0)
+   add $t0, $t0, 4
+   j L
+   done:
