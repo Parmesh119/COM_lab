@@ -10,11 +10,13 @@ syscall
 
 li $v0, 5
 syscall
+
 l:
 beq $v0, $zero, exit
 mul $t3, $t3, $v0
 subi $v0, $v0, 1
 j l
+
 exit:
 move $a0, $t3
 li $v0, 1
